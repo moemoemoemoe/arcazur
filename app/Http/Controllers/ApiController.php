@@ -25,9 +25,12 @@ class ApiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function spec_offer($id)
     {
-        //
+        $offers = Offer::orderBy('id','DESC')->where('cat_id', $id)->where('status',1)->get();
+        return '{
+  "feed": '.$offers.'}';
+
     }
 
     /**

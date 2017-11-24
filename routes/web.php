@@ -11,6 +11,8 @@
 |
 */
 Route::get('api/get_offers', 'ApiController@get_offers')->name('get_offers');
+Route::get('api/spec_offer/{id}', 'ApiController@spec_offer')->name('spec_offer');
+
 Route::get('/', function () {
     return view('welcome');
 });

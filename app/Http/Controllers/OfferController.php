@@ -65,7 +65,7 @@ class OfferController extends Controller
      $offer->cat_id = $category;
     
     
-     $offer->image_url_original = $image_name[0];   
+     $offer->image_url_original = 'http://test.arcazur.com/uploads/offers/'.$image_name[0];   
      $offer->status = 0;
           $offer->price = $price;
 
@@ -73,7 +73,7 @@ class OfferController extends Controller
    for($i=0;$i<count($image_name);$i++){
       $gallery = new Imoffer();
       $gallery->offer_id= $offer->id;
-      $gallery->img_name = $image_name[$i];
+      $gallery->img_name = 'http://test.arcazur.com/uploads/offers/'.$image_name[$i];
       $gallery->save();
     }
 

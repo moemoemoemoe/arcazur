@@ -63,7 +63,7 @@
 @endif
                 </span>
             </div>
-            <div class="panel-body" style="height:120px; background: url('{{asset('uploads/offers/'.$gallery->img_name)}}'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+            <div class="panel-body" style="height:120px; background: url('$gallery->img_name}}'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
                 
             </div>
             <div class="panel-footer text-center">

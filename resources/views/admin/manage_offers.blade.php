@@ -25,7 +25,7 @@
 @endif
                 </span>
             </div>
-            <div class="panel-body" style="height:150px ; background: url('{{asset('uploads/offers/'.$offer->image_url_original)}}'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+            <div class="panel-body" style="height:150px ; background: url('{{$offer->image_url_original}}'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
                 
             </div>
             <div class="panel-footer text-center">

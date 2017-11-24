@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('api/get_offers', 'ApiController@get_offers')->name('get_offers');
 Route::get('/', function () {
     return view('welcome');
 });

@@ -28,8 +28,7 @@ class ApiController extends Controller
     public function spec_offer($id)
     {
         $offers = Offer::select('id','title','image_url_original','content','price')->orderBy('id','DESC')->where('cat_id', $id)->where('status',1)->get();
-        return '{
-  "feed": '.$offers.'}';
+        return $offers';
 
     }
 
